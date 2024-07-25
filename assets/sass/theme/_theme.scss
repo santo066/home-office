@@ -1,6 +1,6 @@
 /* theme */
 
-//faq section
+// faq section
 .faq-section {
 
     ul.accordion-list {
@@ -142,7 +142,6 @@
 }
 
 // blog section
-
 .single-blog {
     p {
         a {
@@ -153,6 +152,122 @@
             &:hover {
                 text-decoration: underline;
                 transition: $transition;
+            }
+        }
+    }
+}
+
+// gallary-section
+.gallary-section {
+    .gallery {
+        display: flex;
+
+        img {
+            width: 243px;
+            height: 285px;
+        }
+    }
+}
+
+// topFooter-section
+.topFooter-section {
+    .single-logo {
+        display: flex;
+
+        span {
+            font-size: 40px;
+        }
+
+        .logo-contant {
+            padding: 0 15px;
+        }
+    }
+}
+
+// footer-section
+
+.footer-section {
+    background-color: $primary-color;
+
+    .footer-top {
+        border-bottom: 1px solid $white-color;
+        @include tablet{
+            padding: 50px 0;
+        }
+        .footer-logo {
+            padding-right: 70px;
+            @include tablet{
+                margin-bottom: 50px;
+            }
+            @include all-phone{
+                margin-bottom: 50px;
+            }
+
+            h3 {
+                color: $white-color;
+            }
+
+            p {
+                color: $white-color;
+                margin-bottom: 30px;
+                @include tablet{
+                    margin-bottom: 20px;
+                }
+                @include all-phone{
+                    margin-bottom: 20px;
+                }
+            }
+
+            .footer-icons {
+                a {
+                    color: $white-color;
+                    margin-right: 40px;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .footer-menu {
+            @include all-phone{
+                margin-bottom: 50px;
+            }
+            h5 {
+                color: $white-color;
+            }
+
+            ul {
+                li {
+                    margin-top: 10px;
+
+                    a {
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+
+        .footer-form {
+            h5{
+                color: $white-color;
+            }
+            input{
+                background-color: transparent;
+                border: 0;
+                border-bottom: 1px solid $white-color;
+                padding-bottom: 20px;
+                margin: 30px 0;
+                @include all-phone{
+                    margin: 20px 0;
+                    padding-bottom: 10px;
+                }
+            }
+            .primary-btn {
+                border-radius: 0;
+                display: block;
+                width: 130px;
+                background-color: $white-color;
+                color: $primary-color;
+                font-weight: 600;
             }
         }
     }
