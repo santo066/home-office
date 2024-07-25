@@ -1,0 +1,18 @@
+/* button */
+.primary-btn {
+    color: $white-color;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    display: inline-block;
+    padding: 14px 40px;
+    background-color: $secondary-color;
+    transition: $transition;
+    border-radius: 5px;
+
+    &:hover {
+        color: $white-color;
+        background-color: $primary-color;
+    }
+}
