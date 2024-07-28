@@ -191,15 +191,19 @@
 
     .footer-top {
         border-bottom: 1px solid $white-color;
-        @include tablet{
+
+        @include tablet {
             padding: 50px 0;
         }
+
         .footer-logo {
             padding-right: 70px;
-            @include tablet{
+
+            @include tablet {
                 margin-bottom: 50px;
             }
-            @include all-phone{
+
+            @include all-phone {
                 margin-bottom: 50px;
             }
 
@@ -210,10 +214,12 @@
             p {
                 color: $white-color;
                 margin-bottom: 30px;
-                @include tablet{
+
+                @include tablet {
                     margin-bottom: 20px;
                 }
-                @include all-phone{
+
+                @include all-phone {
                     margin-bottom: 20px;
                 }
             }
@@ -228,9 +234,10 @@
         }
 
         .footer-menu {
-            @include all-phone{
+            @include all-phone {
                 margin-bottom: 50px;
             }
+
             h5 {
                 color: $white-color;
             }
@@ -247,20 +254,23 @@
         }
 
         .footer-form {
-            h5{
+            h5 {
                 color: $white-color;
             }
-            input{
+
+            input {
                 background-color: transparent;
                 border: 0;
                 border-bottom: 1px solid $white-color;
                 padding-bottom: 20px;
                 margin: 30px 0;
-                @include all-phone{
+
+                @include all-phone {
                     margin: 20px 0;
                     padding-bottom: 10px;
                 }
             }
+
             .primary-btn {
                 border-radius: 0;
                 display: block;
@@ -268,6 +278,66 @@
                 background-color: $white-color;
                 color: $primary-color;
                 font-weight: 600;
+            }
+        }
+    }
+}
+
+//next day
+
+.dresses-section {
+    .sort-dresses {
+        select {
+            width: 100%;
+            padding: 25px 22px;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: url('../images/arrow.png') no-repeat right center;
+            background-size: 20px;
+            background-position: 90% 50%;
+        }
+    }
+
+    .price-dresses {
+
+        .price-level {
+            background-color: $primary-color2;
+            width: 100%;
+            height: 4px;
+
+            .price-level-black {
+                background-color: $primary-color;
+                width: 90%;
+                height: 4px;
+            }
+        }
+
+        .price {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 10px;
+
+            p {
+                color: $primary-color;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .availability-dresses {
+        .chackbox {
+            display: flex;
+
+            .chackbox-content {
+                display: flex;
+                width: 200px;
+                justify-content: space-between;
+                margin-left: 10px;
+                p{
+                    margin-bottom: 0;
+                    color: $primary-color;
+                }
             }
         }
     }

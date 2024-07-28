@@ -56,6 +56,7 @@ h4 {
 
 h5 {
   font-size: 20px;
+  font-weight: 600;
 }
 
 h6 {
@@ -77,7 +78,6 @@ h6 {
 
 p {
   color: #666872;
-  margin-bottom: 10px;
 }
 
 ul {
@@ -1186,4 +1186,47 @@ nav .main-menu li a::before {
   background-color: #ffffff;
   color: #252525;
   font-weight: 600;
+}
+
+.dresses-section .sort-dresses select {
+  width: 100%;
+  padding: 25px 22px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("../images/arrow.png") no-repeat right center;
+  background-size: 20px;
+  background-position: 90% 50%;
+}
+.dresses-section .price-dresses .price-level {
+  background-color: #8B837D;
+  width: 100%;
+  height: 4px;
+}
+.dresses-section .price-dresses .price-level .price-level-black {
+  background-color: #252525;
+  width: 90%;
+  height: 4px;
+}
+.dresses-section .price-dresses .price {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+.dresses-section .price-dresses .price p {
+  color: #252525;
+  font-weight: 500;
+}
+.dresses-section .availability-dresses .chackbox {
+  display: flex;
+}
+.dresses-section .availability-dresses .chackbox .chackbox-content {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.dresses-section .availability-dresses .chackbox .chackbox-content p {
+  margin-bottom: 0;
+  color: #252525;
 }/*# sourceMappingURL=style.css.map */
